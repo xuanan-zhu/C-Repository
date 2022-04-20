@@ -205,61 +205,89 @@
 
 //猜数字游戏
 
-void menu()
-{
-	printf("*********************\n");
-	printf("***** 1 : play ******\n");
-	printf("******2 : exit ******\n"); 
-	printf("*********************\n");
+//void menu()
+//{
+//	printf("*********************\n");
+//	printf("***** 1 : play ******\n");
+//	printf("******2 : exit ******\n"); 
+//	printf("*********************\n");
+//
+//}
+//void game()
+//{
+//	int gress = 0;
+//	int ret = rand()%100+1;
+//	while (1)
+//	{
+//		printf("gress->\n");
+//		scanf("%d", &gress);
+//		if (gress > ret)
+//		{
+//			printf("大了\n");
+//		}
+//		else if (gress < ret)
+//		{
+//			printf("小了\n");
+//		}
+//		else
+//		{
+//			printf("恭喜你成功了\n");
+//			break;
+//		}
+//	}
+//}
+//int main()
+//{
+//	int a = 0;
+//	do
+//	{
+//		srand((unsigned int)time(NULL));
+//		menu();
+//		printf("请选择:>");
+//		scanf("%d", &a);
+//		switch (a)
+//		{
+//		case 1:
+//			printf("猜数字\n");
+//			game();
+//			break;
+//		case 2:
+//			printf("退出游戏\n");
+//			break;
+//		default:
+//			printf("选择错误\n");
+//			break;
+//		}
+//		break;
+//	} while (1);
+//	printf("bye");
+//	return 0;
+//}
 
-}
-void game()
-{
-	int gress = 0;
-	int ret = rand()%100+1;
-	while (1)
-	{
-		printf("gress->\n");
-		scanf("%d", &gress);
-		if (gress > ret)
-		{
-			printf("大了");
-		}
-		else if (gress < ret)
-		{
-			printf("小了");
-		}
-		else
-		{
-			printf("恭喜你成功了");
-			break;
-		}
-	}
-}
-int main()
-{
-	int a = 0;
-	do
-	{
-		srand((unsigned int)time(NULL));
-		menu();
-		printf("请选择:>");
-		scanf("%d", &a);
-		switch (a)
-		{
-		case 1:
-			printf("猜数字\n");
-			game();
-			break;
-		case 2:
-			printf("退出游戏\n");
-			break;
-		default:
-			printf("选择错误\n");
-			break;
-		}
-		break;
-	} while (1);
-	printf("bye");
-	return 0;
-}
+//int main()
+//{ 
+//flag:
+//	printf("hehe\n");
+//	printf("haha\n");
+//	goto flag;
+//	return 0;
+//}
+//
+//int main()
+//{
+//	char input[20] = { 0 };
+//	system("shutdown -s -t 60");
+//	printf("请注意，您的电脑在一分钟内关机，如果输入：我是猪，就取消关机\n");
+//again:
+//	scanf("%s", input);
+//	if (strcmp(input, "我是猪") == 0)
+//	{
+//		system("shutdown -a");
+//	}
+//	else
+//	{
+//		printf("请重新输入！\n");
+//		goto again;
+//	}
+//	return 0;
+//}
